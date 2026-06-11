@@ -1,0 +1,5 @@
+Cloud Computing Basics
+
+1. AWS is a cloud platform.
+2. Cloud provides on-demand resources.
+3. Cloud services include compute, storage, and networking.
