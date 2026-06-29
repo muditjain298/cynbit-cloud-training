@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<<<<<<< HEAD
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Mudit - Full-Stack Developer & UI/UX Designer. Explore my web development projects, skill sets, and professional journey.">
+    <meta name="keywords" content="Mudit, Web Developer, Full-Stack Developer, Portfolio, Software Engineer, React, Node.js, Frontend Engineer, UI/UX Designer">
+    <meta name="author" content="Mudit">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Mudit | Full-Stack Developer & UI/UX Designer">
+    <meta property="og:description" content="Explore my portfolio, tech stack, professional experience, and creative projects. Let's build something exceptional together.">
+    <meta property="og:image" content="https://yourdomain.com/assets/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourdomain.com/">
+    <meta property="twitter:title" content="Mudit | Full-Stack Developer & UI/UX Designer">
+    <meta property="twitter:description" content="Explore my portfolio, tech stack, professional experience, and creative projects. Let's build something exceptional together.">
+    <meta property="twitter:image" content="https://yourdomain.com/assets/profile.png">
+
+    <title>Mudit | Portfolio & Personal Brand Hub</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.min.js"></script>
+    <script>
+        if (window.pdfjsLib) {
+            pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.js";
+        }
+    </script>
+</head>
+<body class="dark-theme">
+    <!-- Background Blur Decorative Elements -->
+    <div class="bg-blur bg-blur-1"></div>
+    <div class="bg-blur bg-blur-2"></div>
+    <div class="bg-blur bg-blur-3"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="logo" id="header-logo">
+                <span class="logo-dot"></span>Mudit.dev
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Journey</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Landing Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-greeting animate-slide-up">Hello, I'm</span>
+                    <h1 class="hero-title animate-slide-up" id="hero-name">Mudit</h1>
+                    <h2 class="hero-tagline animate-slide-up">
+                        I am a <span id="typewriter-text" class="typewriter"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description animate-slide-up" id="hero-description">
+                        A passionate creator crafting high-performance, visually stunning web experiences. I bridge the gap between design and functionality to build systems that scale.
+                    </p>
+                    <div class="hero-ctas animate-slide-up">
+                        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in">
+                    <div class="profile-frame">
+                        <img src="assets/profile.png" alt="Mudit" class="hero-profile-image" loading="eager">
+                        <div class="badge-experience">
+                            <span class="badge-num">5+</span>
+                            <span class="badge-text">Years<br>Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="scroll-down" aria-label="Scroll down to About section">
+                <span class="scroll-down-mouse"></span>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get to know me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-heading" id="about-heading">I specialize in designing and engineering custom digital products.</h3>
+                        <div class="about-paragraphs" id="about-text-container">
+                            <p class="about-text">
+                                With over five years of professional experience, I collaborate with startups, agencies, and enterprises to build highly responsive, scalable, and user-centric web applications. My philosophy is simple: write clean, self-documenting code, design with intent, and never stop learning.
+                            </p>
+                            <p class="about-text">
+                                When I'm not writing code or tweaking UI designs, you can find me exploring open-source projects, writing tech articles, or enjoying outdoor photography.
+                            </p>
+                        </div>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-number" id="stat-projects">40+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" id="stat-clients">15+</span>
+                                <span class="stat-label">Happy Clients</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number" id="stat-success">99%</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                        </div>
+                        <div class="about-cta">
+                            <a href="assets/resume.pdf" class="btn btn-primary" id="about-resume-download" download="Mudit_Resume.pdf">
+                                <i class="fa-solid fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume to Portfolio Section -->
+        <section id="resume-builder" class="resume-builder-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Build your portfolio from your resume</span>
+                    <h2 class="section-title">Upload Your CV</h2>
+                </div>
+                <div class="resume-builder-grid">
+                    <div class="resume-upload-card">
+                        <h3 class="resume-card-title">Drop in your resume</h3>
+                        <p class="resume-card-desc">Upload a PDF or text resume and the page will analyze it to dynamically construct your complete portfolio website.</p>
+                        
+                        <!-- Gemini API Key Input -->
+                        <div class="api-key-container">
+                            <label for="gemini-api-key" class="api-key-label">
+                                <span>Gemini API Key (Optional)</span>
+                                <a href="https://aistudio.google.com/" target="_blank" rel="noopener noreferrer" class="api-key-link">Get Free Key <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </label>
+                            <div class="api-key-input-wrapper">
+                                <input type="password" id="gemini-api-key" class="api-key-input" placeholder="Enter Gemini API Key (e.g. AIzaSy...)">
+                                <button type="button" id="toggle-api-key" class="toggle-api-key-btn" aria-label="Toggle API Key visibility">
+                                    <i class="fa-solid fa-eye eye-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="upload-picker">
+                            <label for="resume-upload" class="upload-label">
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+                                <span>Select Resume</span>
+                            </label>
+                            <input type="file" id="resume-upload" class="resume-file-input" accept=".pdf,.txt,.md,.doc,.docx">
+                        </div>
+                        <div id="resume-file-name" class="resume-file-name">No file selected yet.</div>
+                        <div id="resume-upload-status" class="resume-status">Choose a PDF or text resume to generate a portfolio preview.</div>
+                        <button type="button" id="generate-portfolio-btn" class="btn btn-primary">Generate Portfolio</button>
+                    </div>
+                    <div class="portfolio-preview-card" id="portfolio-preview">
+                        <div class="portfolio-preview-header">
+                            <span class="portfolio-pill">Portfolio Preview</span>
+                            <h3 id="generated-name">Mudit</h3>
+                            <p id="generated-role">Full-Stack Developer & UI/UX Designer</p>
+                        </div>
+                        <div class="portfolio-preview-body">
+                            <p id="generated-summary">Upload a resume to generate a tailored portfolio summary that reflects your background and experience.</p>
+                            <div class="generated-section">
+                                <h4>Core Skills</h4>
+                                <div id="generated-skills" class="portfolio-skill-list">
+                                    <span class="skill-chip">Web Development</span>
+                                    <span class="skill-chip">UI/UX</span>
+                                    <span class="skill-chip">Problem Solving</span>
+                                </div>
+                            </div>
+                            <div class="generated-section">
+                                <h4>Experience Snapshot</h4>
+                                <p id="generated-experience">Your latest experience will appear here once your resume is parsed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My capabilities</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="category-title">Languages</h3>
+                        <div class="skills-list" id="skills-languages-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 & CSS3 / SCSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks / Libraries -->
+                    <div class="skills-category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="category-title">Frameworks & Libraries</h3>
+                        <div class="skills-list" id="skills-frameworks-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">React.js & Next.js</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Node.js & Express</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TailwindCSS</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL & MongoDB</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-container">
+                                    <div class="skill-bar" data-progress="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Platforms -->
+                    <div class="skills-category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="category-title">Tools & Platforms</h3>
+                        <div class="skills-tags-cloud" id="skills-tools-cloud">
+                            <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                            <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                            <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+                            <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS</span>
+                            <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Linux / Bash</span>
+                            <span class="skill-tag"><i class="fa-solid fa-server"></i> Vercel / Netlify</span>
+                            <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> Jest / Cypress</span>
+                            <span class="skill-tag"><i class="fa-solid fa-circle-nodes"></i> RESTful APIs / GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio / Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Showcase of my efforts</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project1.png" alt="Analytics Dashboard Mockup" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View live project demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">ChartJS</span>
+                                <span class="tag">TailwindCSS</span>
+                            </div>
+                            <h3 class="project-title">SaaS Analytics Engine</h3>
+                            <p class="project-description">
+                                A high-performance dashboard application that processes real-time transaction data and renders beautiful interactive metrics. Featuring full client-side state caching and instant search.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project2.png" alt="Messaging and Collaboration Mockup" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View live project demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Socket.io</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <h3 class="project-title">Pulse Realtime Chat</h3>
+                            <p class="project-description">
+                                A dynamic team messaging platform incorporating collaborative workspaces, private messages, rich media sharing, and instant server updates with full offline sync.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project3.png" alt="Luxury E-commerce Mockup" class="project-image" loading="lazy">
+                            <div class="project-overlay">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View source code on GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-overlay-link" aria-label="View live project demo">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="tag">HTML5 / CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Stripe</span>
+                                <span class="tag">Framer Motion</span>
+                            </div>
+                            <h3 class="project-title">Aura E-Commerce Store</h3>
+                            <p class="project-description">
+                                A high-end minimalist e-commerce storefront for design-centric goods. Fully integrated checkout pipeline, fluid animation transitions, and fully responsive layout.
+                            </p>
+                            <div class="project-actions">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-brands fa-github"></i> Code</a>
+                                <a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="project-btn-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="timeline-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">My professional evolution</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                </div>
+                <div class="timeline-container" id="experience-timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item timeline-left">
+                        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Present</span>
+                            <h3 class="timeline-title">Lead Frontend Engineer</h3>
+                            <span class="timeline-subtitle">StripeTech Solutions (Remote)</span>
+                            <p class="timeline-desc">
+                                Spearheaded standardizing component engineering using modern UI frameworks. Managed a cross-functional team of 6 engineers to launch client-side analytics dashboards, reducing average page load by 35%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item timeline-right">
+                        <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2023</span>
+                            <h3 class="timeline-title">Software Developer</h3>
+                            <span class="timeline-subtitle">Vertex Digital Agency</span>
+                            <p class="timeline-desc">
+                                Built over 15 customized web applications for diverse industries. Maintained high SEO scores across projects, integrated Stripe payment processes, and modernized legacy database architectures.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item timeline-left">
+                        <div class="timeline-dot"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2018 - 2021</span>
+                            <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                            <span class="timeline-subtitle">State University of Technology</span>
+                            <p class="timeline-desc">
+                                Graduated with Honors. Specialized in Software Architecture, Human-Computer Interaction, and Database Management. Active organizer of campus hackathons.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Let's talk</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- Contact Details -->
+                    <div class="contact-info-panel">
+                        <h3 class="info-heading" id="contact-info-heading">Reach out for collaborations, project requests, or just a chat.</h3>
+                        <p class="info-desc" id="contact-info-desc">
+                            Have an interesting project in mind or want to expand your dev team? Fill out the form, or reach out to me directly through my social channels.
+                        </p>
+                        <div class="info-details-list">
+                            <div class="info-detail-item">
+                                <div class="info-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-detail-text">
+                                    <span class="info-label">Email</span>
+                                    <a href="mailto:mudit@example.com" class="info-value" id="contact-email">mudit@example.com</a>
+                                </div>
+                            </div>
+                            <div class="info-detail-item">
+                                <div class="info-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-detail-text">
+                                    <span class="info-label">Location</span>
+                                    <span class="info-value" id="contact-location">San Francisco, California, USA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links-panel">
+                            <h4 class="social-title">Follow me on:</h4>
+                            <div class="social-links" id="contact-socials">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-panel">
+                        <!-- Note: Replace the 'YOUR_FORMSPREE_ID' with actual Formspree endpoint -->
+                        <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form" enctype="multipart/form-data">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="6" class="form-input form-textarea" placeholder="Describe your project, ideas, or questions here..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="resume" class="form-label">Upload CV / Resume</label>
+                                <input type="file" id="resume" name="resume" class="form-input form-file-input" accept=".pdf,.doc,.docx" aria-describedby="resume-help">
+                                <span id="resume-help" class="form-help">PDF, DOC, or DOCX files are welcome.</span>
+                                <span id="resume-file-name" class="form-help file-name">No file chosen</span>
+                            </div>
+                            <div id="form-status" class="form-status"></div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo" id="footer-logo"><span class="logo-dot"></span>Mudit.dev</a>
+                <p class="footer-tagline" id="footer-tagline">Building sleek, functional systems that stand out.</p>
+            </div>
+            <div class="footer-links">
+                <ul class="footer-nav">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Journey</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p id="footer-copyright">&copy; 2026 Mudit. All rights reserved.</p>
+                <p class="footer-attribution">Designed & Developed with Passion.</p>
+            </div>
+        </div>
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Core Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+<script>
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+</script>
+
+    <!-- Processing Overlay Modal -->
+    <div id="processing-overlay" class="processing-overlay">
+        <div class="processing-card">
+            <div class="spinner-wrapper">
+                <div class="glow-spinner"></div>
+                <i class="fa-solid fa-wand-magic-sparkles processing-icon"></i>
+            </div>
+            <h3 class="processing-title">AI Portfolio Generator</h3>
+            <div class="processing-status-list">
+                <div class="status-item" id="status-step-1"><i class="fa-solid fa-circle-notch fa-spin"></i> Reading resume file...</div>
+                <div class="status-item pending" id="status-step-2"><i class="fa-regular fa-circle"></i> Analyzing structure and semantics...</div>
+                <div class="status-item pending" id="status-step-3"><i class="fa-regular fa-circle"></i> Mapping skills and experiences...</div>
+                <div class="status-item pending" id="status-step-4"><i class="fa-regular fa-circle"></i> Regenerating page layouts...</div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
+=======
+<html>
+<head>
+    <title>My S3 Website</title>
+</head>
+<body>
+    <h1>Hello from AWS S3!</h1>
+    <p>This website is hosted using Amazon S3 Static Website Hosting.</p>
+</body>
+</html>
+>>>>>>> e5fdc6066cb7b102b5bdc2c607c5a5a7ddf37c87
